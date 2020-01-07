@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/c-shap-upload-to-aws-s3
+/c-shap-upload-to-aws-s3/bin
+/c-shap-upload-to-aws-s3/obj/Debug
+/packages

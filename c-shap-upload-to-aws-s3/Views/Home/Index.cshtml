@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.179.0.min.js"></script>
+<div class="jumbotron">
+    <h1>Test Upload file to S3</h1>
+</div>
+@using (Html.BeginForm("FileUpload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="form-group">
+            <label class="col-md-2">Upload:</label>
+            <input class="form-control col-lg-8" type="file" name="file" id="file" />
+        </div>
+        <div>
+            <input type="submit" value="upload" class="btn btn-success form-control" />
+        </div>
+    </div>
+}
+
