@@ -9,5 +9,6 @@ namespace c_shap_upload_to_aws_s3.Models
     {
         public bool Success { get; set; }
         public string FileName { get; set; }
+        public string PhotoPath { get; set; }
     }
 }

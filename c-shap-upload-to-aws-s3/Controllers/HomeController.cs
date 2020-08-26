@@ -25,7 +25,7 @@ namespace c_shap_upload_to_aws_s3.Controllers
             {
                 if (file != null)
                 {
-                    uploadService.UploadObject(file);
+                    var response = uploadService.UploadObject(file);
                 }
             }
             catch (Exception e)
